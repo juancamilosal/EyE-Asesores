@@ -1,0 +1,19 @@
+img{
+  width: 100px;
+}
+
+.navbar{
+  padding: 5px;
+  background-image: linear-gradient(to right top, #ffffff, #edeefe, #d6deff, #b8d0ff, #91c4ff, #73b0f1, #519ce4, #2188d6, #1866b6, #144694, #122772, #0d0750);
+}
+
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen  and (max-width: 767px){
+.navbar-brand{
+   display: none;
+}
+}
