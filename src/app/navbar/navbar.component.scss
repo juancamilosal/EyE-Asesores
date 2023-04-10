@@ -1,16 +1,32 @@
-img{
-  width: 100px;
+.navbar-container {
+  overflow: hidden;
+}
+
+img {
+  width: 200px;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar-container:hover img {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+a{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: white;
 }
 
 .navbar{
   padding: 5px;
-  background-image: linear-gradient(to right top, #ffffff, #edeefe, #d6deff, #b8d0ff, #91c4ff, #73b0f1, #519ce4, #2188d6, #1866b6, #144694, #122772, #0d0750);
-}
+  background-image: linear-gradient(to left top, #051937, #183b65, #286196, #338aca, #38b6ff);}
 
 .navbar-collapse{
   align-items: center;
   justify-content: space-between;
 }
+
 
 @media screen  and (max-width: 767px){
 .navbar-brand{
