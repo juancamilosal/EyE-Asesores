@@ -83,6 +83,17 @@
             }
         }
     });
-    
+    const form = document.querySelector('form');
+    const mensajeEnviado = document.getElementById('mensaje-enviado');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        mensajeEnviado.style.display = 'block';
+
+        setTimeout(function() {
+            form.reset();
+            mensajeEnviado.style.display = 'none';
+        }, 3000);
+    });
 })(jQuery);
 
