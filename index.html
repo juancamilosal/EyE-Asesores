@@ -67,8 +67,8 @@
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Inicio</a>
                         <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
-                        <a href="service.html" class="nav-item nav-link">Nuestros Servicios</a>
-                        <a href="blog.html" class="nav-item nav-link">Seguros</a>
+                        <a href="service.html" class="nav-item nav-link">Seguros</a>
+                        <a href="blog.html" class="nav-item nav-link">Nuestro Blog</a>
                         <a href="contact.html" class="nav-item nav-link">Contacto</a>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Conoce nuestro</h4>
                             <h1 class="display-3 text-white mb-md-4">PORTAFOLIO DE VIDA</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Conoce más aquí</a>
+                            <a href="service.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Conoce más aquí</a>
                         </div>
                     </div>
                 </div>
@@ -306,10 +306,6 @@
                             <h1 class="text-secondary" data-toggle="counter-up">1250</h1>
                             <h5 class="font-weight-bold">Clientes satisfechos</h5>
                         </div>
-                        <div class="col-sm-6 mb-4">
-                            <h1 class="text-secondary" data-toggle="counter-up">10000</h1>
-                            <h5 class="font-weight-bold">Pólizas emitidas</h5>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -384,7 +380,7 @@
                             <p>Hogar y hogar deudores</p>
                             <p>PYMES</p>
                         </div>
-                        <a href="" class="btn btn-secondary py-2 px-4">Cotiza aquí</a>
+                        <button  type="button"  class="btn btn-secondary py-2 px-4" data-bs-toggle="modal" data-bs-target="#modalLabel">Cotiza aquí</button>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4" >
@@ -396,7 +392,7 @@
                             <p>Seguro hogar</p>
                             <p>Seguro arrendamiento</p>
                         </div>
-                        <a href="" class="btn btn-primary py-2 px-4">Cotiza aquí</a>
+                        <button  type="button"  class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#modalLabel">Cotiza aquí</button>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
@@ -408,7 +404,7 @@
                             <p>Seguro de pensión</p>
                             <p>Seguro de educación</p>
                         </div>
-                        <a href="" class="btn btn-secondary py-2 px-4">Cotiza aquí</a>
+                        <button  type="button"  class="btn btn-secondary py-2 px-4" data-bs-toggle="modal" data-bs-target="#modalLabel">Cotiza aquí</button>
                     </div>
                 </div>
             </div>
@@ -416,6 +412,54 @@
     </div>
     <!-- Pricing Plan End -->
 
+<!---Modal Start -->
+    <div class="modal fade" id="modalLabel" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 " id="modal"><b>Envíanos tu datos</b></h1>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="col-form-label text-secondary"><b>¿Qué seguro te gustaría cotizar?</b></label>
+                            <span class="text-danger">*</span>
+                            <select  id="selectSeguro" type="text" class="form-control border-dark text-primary" required >
+                            <option class="text-danger" ></option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label  text-secondary"><b>¿Alguna compañía en específico?</b></label>
+                            <span >(Opcional)</span>
+                            <select  id="selectCompañia" type="text" class="form-control border-dark text-primary">
+                                <option ></option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="col-form-label  text-secondary"><b>Nombre y Apellido</b></label>
+                            <span class="text-danger">*</span>
+                            <input class="form-control border-dark text-primary" id="name" required >
+                        </div>
+                        <div class="mb-3">
+                            <label for="movil" class="col-form-label  text-secondary"><b>Número de Celular</b></label>
+                            <span class="text-danger">*</span>
+                            <input type="number" class="form-control border-dark text-primary" id="movil" required >
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label  text-secondary"> <b>Correo Electrónico</b></label>
+                            <span class="text-danger">*</span>
+                            <input type="email" class="form-control border-dark text-primary" id="email" required >
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-body text-center pt-3">
+                    <button type="button" class="btn btn-secondary p-2 mx-2" data-bs-dismiss="modal"><b>Cerrar</b></button>
+                    <button type="button" class="btn btn-primary p-2"><b>Envíar</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Modal End -->
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
@@ -471,11 +515,11 @@
                     <div class="shadow mb-4">
                         <div class="position-relative">
                             <img class="img-fluid w-100" src="img/miniatura_poliza_salud.png" alt="">
-                            <a href="" class="position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4" style="top: 0; left: 0; background: rgba(0, 0, 0, .4);">
+                            <a href="https://youtu.be/AYlLD1PzOvg" class="position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4" style="top: 0; left: 0; background: rgba(0, 0, 0, .4);" target="_blank">
                             </a>
                         </div>
                         <div class="d-flex flex-column align-items-center ">
-                            <a href="https://youtu.be/AYlLD1PzOvg" class="btn btn-light py-2 px-4">Póliza de salud, medicina prepagada y plan complementario</a>
+                            <a href="https://youtu.be/AYlLD1PzOvg" class="btn btn-light py-2 px-4" target="_blank">Póliza de salud, medicina prepagada y plan complementario</a>
                         </div>
                     </div>
                 </div>
@@ -483,11 +527,11 @@
                     <div class="shadow mb-4">
                         <div class="position-relative">
                             <img class="img-fluid w-100" src="img/miniatura_seguro_vida.png" alt="">
-                            <a href="" class="position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4" style="top: 0; left: 0; background: rgba(0, 0, 0, .4);">
+                            <a href="https://youtu.be/SFmUMPVG8JE" class="position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4" style="top: 0; left: 0; background: rgba(0, 0, 0, .4);" target="_blank">
                             </a>
                         </div >
                         <div class="d-flex flex-column align-items-center ">
-                            <a href="https://youtu.be/SFmUMPVG8JE" class="btn btn-light py-2 px-4">Conoce los beneficios y coberturas de un seguro de vida</a>
+                            <a href="https://youtu.be/SFmUMPVG8JE" class="btn btn-light py-2 px-4"  target="_blank">Conoce los beneficios y coberturas de un seguro de vida</a>
                         </div>
                     </div>
                 </div>
@@ -495,11 +539,11 @@
                     <div class="shadow mb-4">
                         <div class="position-relative">
                             <img class="img-fluid w-100" src="img/miniatura_mascotas.png" alt="">
-                            <a href="" class="position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4" style="top: 0; left: 0; background: rgba(0, 0, 0, .4);">
+                            <a href="https://youtu.be/HvQ2scLXL1c" class="position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4" style="top: 0; left: 0; background: rgba(0, 0, 0, .4);" target="_blank">
                             </a>
                         </div>
                         <div class="d-flex flex-column align-items-center ">
-                            <a href="https://youtu.be/HvQ2scLXL1c" class="btn btn-light py-2 px-4">¿Sabías que existe un seguro para mascotas? </a>
+                            <a href="https://youtu.be/HvQ2scLXL1c" class="btn btn-light py-2 px-4"  target="_blank">¿Sabías que existe un seguro para mascotas? </a>
                         </div>
                     </div>
                 </div>
@@ -517,11 +561,10 @@
                 <p>Nuestra experiencia de más de 40 años. Nos caracteriza por prestar un servicio de alta calidad en asesoramiento.
                   en seguros de salud, vida, vehículo y general.</p>
                 <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                     <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.youtube.com/@EyESeguros" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.facebook.com/EyEseguros" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.linkedin.com/company/eye-asesores-de-seguros/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="http://instagram.com/eyeseguros" target="_blank"><i class="fab fa-instagram"></i></a>                </div>
             </div>
             <div class="col-lg-4 col-md-12 mb-5 pl-5">
                 <h4 class="text-white mb-5">Ponerse en contacto</h4>
@@ -534,8 +577,8 @@
                 <div class="navbar-nav ml-auto py-0">
                     <a href="index.html" class="border-bottom text-white nav-item nav-link ">Inicio</a>
                     <a href="about.html" class="border-bottom text-white nav-item nav-link">Sobre Nosotros</a>
-                    <a href="service.html" class="border-bottom text-white nav-item nav-link">Nuestros Servicios</a>
-                    <a href="blog.html" class="border-bottom text-white nav-item nav-link">Seguros</a>
+                    <a href="service.html" class="border-bottom text-white nav-item nav-link">Seguros</a>
+                    <a href="blog.html" class="border-bottom text-white nav-item nav-link">Nuestro Blog</a>
                     <a href="contact.html" class="border-bottom text-white nav-item nav-link">Contacto</a>
                 </div>
             </div>
@@ -560,6 +603,8 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>

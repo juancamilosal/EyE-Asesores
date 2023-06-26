@@ -97,3 +97,45 @@
     });
 })(jQuery);
 
+/*Lista de seguros*/
+
+var listaSeguros = ["VIDA", "SALUD", "VEHÍCULO", "HOGAR", "DEUDORES", "INTERNACIONAL", "EDUCACIÓN","MASCOTAS","PENSIÓN", "PYME"]
+var selectSeguro = document.getElementById("selectSeguro");
+
+for (var i = 0; i < listaSeguros.length; i++) {
+    var opcion = document.createElement("option");
+    opcion.value = listaSeguros[i];
+    opcion.text = listaSeguros[i];
+    selectSeguro.appendChild(opcion);
+}
+
+selectSeguro.addEventListener("change", function() {
+    var valorSeleccionado = selectSeguro.value;
+    console.log(valorSeleccionado);
+});
+
+/*Lista de aseguradora*/
+
+var listaCompañia = ["ALLIANZ SEGUROS S.A.", "ASEGURADORA SOLIDARIA DE COLOMBIA",
+"AXA COLPATRIA SEGUROS S.A.", "BBVA SEGUROS COLOMBIA S.A.", "BERKLEY INTERNATIONAL SEGUROS COLOMBIA S.A.",
+"BMI COMPAÑIA DE SEGUROS","CARDIF COLOMBIA SEGUROS GENERALES S.A","CHUBB SEGUROS COLOMBIA S.A.",
+"COFACE COLOMBIA SEGUROS DE CRÉDITO S.A","COLMENA SEGUROS","COMPAÑÍA DE SEGUROS DE VIDA AURORA S.A.",
+"COMPAÑÍA MUNDIAL DE SEGUROS S.A", "- SEGUROS CONFIANZA S.A.", "GLOBAL SEGUROS DE VIDA S.A.", "HDI SEGUROS S.A.",
+"JMALUCELLI TRAVELERS SEGUROS S.A", "LA EQUIDAD SEGUROS","LA PREVISORA COMPAÑÍA DE SEGUROS","LIBERTY SEGUROS S.A.",
+"MAPFRE COLOMBIA S.A.","METLIFE COLOMBIA SEGUROS DE VIDA S.A","NACIONAL DE SEGUROS S.A.","OLD MUTUAL","PAN AMERICAN LIFE DE COLOMBIA",
+"POSITIVA COMPAÑÍA DE SEGUROS","SBS SEGUROS COLOMBIA S.A","SEGUREXPO DE COLOMBIA S.A.","SEGUROS ALFA S.A","SEGUROS COMERCIALES BOLÍVAR S.A.",
+"SEGUROS DEL ESTADO S.A. ","SURAMERICANA S.A","SOLUNION COLOMBIA SEGUROS DE CRÉDITO S.A.","ZURICH COLOMBIA SEGUROS S.A."];
+
+var selectCompañia = document.getElementById("selectCompañia");
+
+for (var i = 0; i < listaCompañia.length; i++) {
+    var opcion = document.createElement("option");
+    opcion.value = listaCompañia[i];
+    opcion.text = listaCompañia[i];
+    selectCompañia.appendChild(opcion);
+}
+
+selectCompañia.addEventListener("change", function() {
+    var valorSeleccionado = selectCompañia.value;
+    console.log(valorSeleccionado);
+});
