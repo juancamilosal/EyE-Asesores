@@ -9574,7 +9574,7 @@ h6,
 
 @media (max-width: 992px) {
   #sobreNosotros {
-    content: url(https://img.freepik.com/foto-gratis/mujer-sonriente-segura-senalando-dedo-abajo-mostrando-banner-logotipo-debajo-recomendando-hacer-clic-enlace_1258-88151.jpg?w=1060&t=st=1687714459~exp=1687715059~hmac=ca2e96cf984eb8fd623aaf3db275ff6ad40976fc13337adf23ac6705d5b93e0c);
+    content: url(https://img.freepik.com/foto-gratis/chica-morena-sonriente-satisfecha-apuntando-dedo-abajo-recomendar-producto_1258-19017.jpg?w=1060&t=st=1687834228~exp=1687834828~hmac=fc018ce731df22d50b42f6953ef0db3335d19fb59d28572e8789a567b58d0827);
   }
 }
 
@@ -9582,4 +9582,8 @@ h6,
   #sobreNosotros {
     content: url(https://img.freepik.com/foto-gratis/chica-latina-sonriente-compartiendo-ofertas-especiales-al-menor_1262-17557.jpg?w=1060&t=st=1687714973~exp=1687715573~hmac=669aef8778bc740d8567cc990bb2069cca2626546a569bb90c523ecd0228ff32);
   }
+}
+
+.img_service{
+height: 400px;
 }
