@@ -139,3 +139,4 @@ selectCompañia.addEventListener("change", function() {
     var valorSeleccionado = selectCompañia.value;
     console.log(valorSeleccionado);
 });
+
