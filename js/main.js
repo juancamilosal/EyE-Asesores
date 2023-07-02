@@ -116,7 +116,7 @@ selectSeguro.addEventListener("change", function() {
 
 /*Lista de aseguradora*/
 
-var listaCompañia = ["ALLIANZ SEGUROS S.A.", "ASEGURADORA SOLIDARIA DE COLOMBIA",
+/*var listaCompañia = ["ALLIANZ SEGUROS S.A.", "ASEGURADORA SOLIDARIA DE COLOMBIA",
 "AXA COLPATRIA SEGUROS S.A.", "BBVA SEGUROS COLOMBIA S.A.", "BERKLEY INTERNATIONAL SEGUROS COLOMBIA S.A.",
 "BMI COMPAÑIA DE SEGUROS","CARDIF COLOMBIA SEGUROS GENERALES S.A","CHUBB SEGUROS COLOMBIA S.A.",
 "COFACE COLOMBIA SEGUROS DE CRÉDITO S.A","COLMENA SEGUROS","COMPAÑÍA DE SEGUROS DE VIDA AURORA S.A.",
@@ -138,5 +138,11 @@ for (var i = 0; i < listaCompañia.length; i++) {
 selectCompañia.addEventListener("change", function() {
     var valorSeleccionado = selectCompañia.value;
     console.log(valorSeleccionado);
-});
+});*/
+
+function scrollToSection() {
+    const seccion = document.getElementById("service");
+    seccion.scrollIntoView({ behavior: 'smooth' });
+}
+
 

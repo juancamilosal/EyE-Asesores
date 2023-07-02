@@ -12,8 +12,11 @@
     <link href="img/NUEUVO%20LOGO_SIN%20BORDES.png" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
@@ -34,6 +37,9 @@
             <div class="row">
                 <div class="col-md-12 text-right text-lg-right">
                     <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3"  href="https://wa.me/573153060894"   target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
                         <a class="text-white px-3" href="https://www.facebook.com/EyEseguros"  target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -55,10 +61,10 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
+    <div class=" container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand text-center">
+                <a href="" class="links navbar-brand text-center">
                     <h1>Euyenid & Edder</h1> <h3 class="">Asesores de seguros</h3>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -66,26 +72,26 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                        <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
-                        <a href="blog.html" class="nav-item nav-link">Nuestro Blog</a>
+                        <a href="index.html" class="efect nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="efect nav-item nav-link">Sobre Nosotros</a>
+                        <a href="blog.html" class="efect nav-item nav-link">Nuestro Blog</a>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="efect nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Seguros
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="vida.html">Vida</a></li>
-                                <li><a class="dropdown-item" href="salud.html">Salud</a></li>
-                                <li><a class="dropdown-item" href="vehiculo.html">Vehículo</a></li>
-                                <li><a class="dropdown-item" href="mascota.html">Mascotas</a></li>
-                                <li><a class="dropdown-item" href="vivienda.html">Vivienda</a></li>
-                                <li><a class="dropdown-item" href="internacional.html">Internacional</a></li>
-                                <li><a class="dropdown-item" href="pension.html">Pensión</a></li>
-                                <li><a class="dropdown-item" href="estudio.html">Estudio</a></li>
-                                <li><a class="dropdown-item" href="pyme.html">PYME</a></li>
+                                <li><a class="efect dropdown-item" href="vida.html">Vida</a></li>
+                                <li><a class="efect dropdown-item" href="salud.html">Salud</a></li>
+                                <li><a class="efect dropdown-item" href="vehiculo.html">Vehículo</a></li>
+                                <li><a class="efect dropdown-item" href="mascota.html">Mascotas</a></li>
+                                <li><a class="efect dropdown-item" href="vivienda.html">Vivienda</a></li>
+                                <li><a class="efect dropdown-item" href="internacional.html">Internacional</a></li>
+                                <li><a class="efect dropdown-item" href="pension.html">Pensión</a></li>
+                                <li><a class="efect dropdown-item" href="estudio.html">Estudio</a></li>
+                                <li><a class="efect dropdown-item" href="pyme.html">PYME</a></li>
                             </ul>
                         </li>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        <a href="contact.html" class="efect nav-item nav-link">Contacto</a>
                         </div>
                     </div>
             </nav>
@@ -104,7 +110,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Conoce nuestro</h4>
                             <h1 class="display-3 text-white mb-md-4">PORTAFOLIO DE VIDA</h1>
-                            <a href="vida.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Conoce más aquí</a>
+                            <button onclick="scrollToSection()" class="btn btn-primary py-md-3 px-md-5 mt-2">Conoce más aquí</button>
                         </div>
                     </div>
                 </div>
@@ -114,7 +120,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Tu hogar, tu refugio</h4>
                             <h1 class="display-3 text-white mb-md-4">TRANQUILIDAD EN TODO MOMENTO</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Conoce más aquí</a>
+                            <button onclick="scrollToSection()" class="btn btn-primary py-md-3 px-md-5 mt-2">Conoce más aquí</button>
                         </div>
                     </div>
                 </div>
@@ -124,7 +130,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Protege el corazón de tu negocio </h4>
                             <h1 class="display-3 text-white mb-md-4">SEGURO PYME</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Conoce más aquí</a>
+                            <button onclick="scrollToSection()" class="btn btn-primary py-md-3 px-md-5 mt-2">Conoce más aquí</button>
                         </div>
                     </div>
                 </div>
@@ -229,76 +235,90 @@
 
 
     <!-- Services Start -->
-    <div class="container-fluid pt-5 pb-3">
+    <div id="service" class="container-fluid pt-5 pb-3">
         <div class="container">
             <h6 class="text-secondary text-uppercase text-center font-weight-medium mb-3">Nuestros servicios</h6>
             <h1 class="display-4 text-center mb-5">¿QUÉ OFRECEMOS?</h1>
             <div class="row">
                 <div class="col-lg-3 col-md-6 pb-1">
-                    <a href="#">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
+                    <a href="vida.html" >
+                    <div class="contenedor d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
+                        <div class="imagen d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
                             <i class=" bi fa-3x bi-clipboard2-heart-fill text-secondary"></i>
                         </div>
-                        <h4 class="font-weight-bold m-0">Seguro de vida</h4>
+                        <h4 class="font-weight-bold mt-4">Seguro de vida</h4>
                     </div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6 pb-1">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
+                    <a href="salud.html">
+                        <div class="contenedor d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
+                        <div class="imagen d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
                             <i class=" bi fas fa-3x bi-hospital text-secondary"></i>
                         </div>
-                        <h4 class="font-weight-bold m-0">Seguro de salud</h4>
+                         <h4 class="font-weight-bold mt-4">Seguro de salud</h4>
                     </div>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-6 pb-1">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
+                    <a href="vehiculo.html">
+                    <div class="contenedor d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
+                        <div class="imagen d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
                             <i class="bi fa-3x bi-car-front-fill text-secondary"></i>
                         </div>
-                        <h4 class="font-weight-bold m-0">Seguro de auto</h4>
+                         <h4 class="font-weight-bold mt-4">Seguro de auto</h4>
                     </div>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-6 pb-1">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
+                    <a href="mascota.html">
+                    <div class="contenedor d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
+                        <div class="imagen d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
                             <i class="bi fa-3x bi-chat-heart-fill text-secondary"></i>
                         </div>
-                        <h4 class="font-weight-bold m-0">Seguro de mascotas</h4>
+                         <h4 class="font-weight-bold mt-4">Seguro de mascotas</h4>
                     </div>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-6 pb-1">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
+                    <a href="vivienda.html">
+                    <div class="contenedor d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
+                        <div class="imagen d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
                             <i class="bi fa-3x bi-house-door-fill text-secondary"></i>
                         </div>
-                        <h4 class="font-weight-bold m-0">Seguro de vivienda</h4>
+                         <h4 class="font-weight-bold mt-4">Seguro de vivienda</h4>
                     </div>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-6 pb-1">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
+                    <a href="pyme.html">
+                    <div class="contenedor d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
+                        <div class="imagen d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
                             <i class="bi fa-3x bi-building-fill text-secondary"></i>
                         </div>
-                        <h4 class="font-weight-bold m-0">Seguro PYME</h4>
+                         <h4 class="font-weight-bold mt-4">Seguro PYME</h4>
                     </div>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-6 pb-1">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
+                    <a href="internacional.html">
+                    <div class="contenedor d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
+                        <div class="imagen d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
                             <i class="bi fa-3x bi-airplane-fill text-secondary"></i>
                         </div>
-                        <h4 class="font-weight-bold m-0">Seguro de viajes</h4>
+                         <h4 class="font-weight-bold mt-4">Seguro de viajes</h4>
                     </div>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-6 pb-1">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
+                    <a href="estudio.html">
+                    <div class="contenedor d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style="height: 300px;">
+                        <div class="imagen d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4" style="width: 100px; height: 100px;">
                             <i class="bi fa-3x bi-buildings-fill text-secondary"></i>
                         </div>
-                        <h4 class="font-weight-bold m-0">Seguro de estudio</h4>
+                         <h4 class="font-weight-bold mt-4">Seguro de estudio</h4>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -447,13 +467,6 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label class="col-form-label  text-secondary"><b>¿Alguna compañía en específico?</b></label>
-                            <span >(Opcional)</span>
-                            <select  id="selectCompañia" type="text" class="form-control border-dark text-primary">
-                                <option ></option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
                             <label for="name" class="col-form-label  text-secondary"><b>Nombre y Apellido</b></label>
                             <span class="text-danger">*</span>
                             <input class="form-control border-dark text-primary" id="name" required >
@@ -479,8 +492,9 @@
     </div>
     <!---Modal End -->
 
+
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
+    <!-- <div class="container-fluid py-5">
         <div class="container">
             <h6 class="text-secondary text-uppercase text-center font-weight-medium mb-3">Testimonio</h6>
             <h1 class="display-4 text-center mb-5">Nuestros clientes dicen</h1>
@@ -519,9 +533,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  -->
     <!-- Testimonial End -->
-
 
     <!-- Blog Start -->
     <div class="container-fluid mt-5 pb-2">
@@ -579,10 +592,12 @@
                 <p>Nuestra experiencia de más de 40 años. Nos caracteriza por prestar un servicio de alta calidad en asesoramiento.
                   en seguros de salud, vida, vehículo y general.</p>
                 <div class="d-flex justify-content-start mt-4">
-                     <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.youtube.com/@EyESeguros" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;"  href="https://wa.me/573153060894"   target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.youtube.com/@EyESeguros" target="_blank"><i class="fab fa-youtube"></i></a>
                     <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.facebook.com/EyEseguros" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.linkedin.com/company/eye-asesores-de-seguros/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="http://instagram.com/eyeseguros" target="_blank"><i class="fab fa-instagram"></i></a>                </div>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="http://instagram.com/eyeseguros" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
             <div class="col-lg-4 col-md-12 mb-5 pl-5">
                 <h4 class="text-white mb-5">Ponerse en contacto</h4>
@@ -593,10 +608,10 @@
             <div class="col-lg-4 col-md-12 mb-5">
                 <h4 class="text-white mb-4">Enlaces rápidos</h4>
                 <div class="navbar-nav ml-auto py-0">
-                    <a href="index.html" class="border-bottom text-white nav-item nav-link ">Inicio</a>
-                    <a href="about.html" class="border-bottom text-white nav-item nav-link">Sobre Nosotros</a>
-                    <a href="blog.html" class="border-bottom text-white nav-item nav-link">Nuestro Blog</a>
-                    <a href="contact.html" class="border-bottom text-white nav-item nav-link">Contacto</a>
+                    <a href="index.html" class="efect border-bottom text-white nav-item nav-link ">Inicio</a>
+                    <a href="about.html" class="efect border-bottom text-white nav-item nav-link">Sobre Nosotros</a>
+                    <a href="blog.html"    class="efect border-bottom text-white nav-item nav-link">Nuestro Blog</a>
+                    <a href="contact.html" class="efect border-bottom text-white nav-item nav-link">Contacto</a>
                 </div>
             </div>
         </div>
@@ -610,7 +625,15 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary back-to-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <!-- Link Whastapp-->
+    <a href="https://wa.me/573153060894" class="whatsapp-link"target="_blank">
+        <img  src="img/img_whastapp.png" class="bi fa-3x bi-whatsapp">
+    </a>
+
 
 
     <!-- JavaScript Libraries -->
