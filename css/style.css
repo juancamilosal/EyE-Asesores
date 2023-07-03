@@ -9591,6 +9591,9 @@ hr{
 .contenedor:hover .imagen {-webkit-transform:scale(1);transform:scale(1.5);}
 .contenedor {overflow:hidden;}
 
+a:hover{
+  text-decoration: none;
+}
 
 .efect:hover{
   text-decoration: none;

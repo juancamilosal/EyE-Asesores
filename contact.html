@@ -12,7 +12,7 @@
     <link href="img/NUEUVO%20LOGO_SIN%20BORDES.png" rel="icon">
 
     <!-- Google Web Fonts -->
-     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +37,9 @@
             <div class="row">
                 <div class="col-md-12 text-right text-lg-right">
                     <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3"  href="https://wa.me/573153060894"   target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
                         <a class="text-white px-3" href="https://www.facebook.com/EyEseguros"  target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -154,32 +157,32 @@
                             <div class="container-fluid">
                                 <div class="row">
                             <div class="col-lg-6 mb-3">
-                                <label for="name" class="col-form-label  text-secondary"><b>Nombre y Apellido</b></label>
+                                <label for="nombre" class="col-form-label  text-secondary"><b>Nombre y Apellido</b></label>
                                 <span class="text-danger">*</span>
-                                <input class="form-control border-dark text-primary" id="name" required >
+                                <input id="nombre"  name="nombre"  class="form-control border-dark text-primary" required >
                             </div>
                             <div class="col-lg-6 mb-3">
-                                <label for="movil" class="col-form-label  text-secondary"><b>Número de Celular</b></label>
+                                <label for="celular" class="col-form-label  text-secondary"><b>Número de Celular</b></label>
                                 <span class="text-danger">*</span>
-                                <input type="number" class="form-control border-dark text-primary" id="movil" required >
+                                <input id="celular" name="celular" type="number" class="form-control border-dark text-primary"  required >
                                 <br>
                             </div>
                             <div class="col-lg-6 mb-3">
-                                <label for="email" class="col-form-label  text-secondary"> <b>Correo Electrónico</b></label>
+                                <label for="correo" class="col-form-label  text-secondary"> <b>Correo Electrónico</b></label>
                                 <span class="text-danger">*</span>
-                                <input type="email" class="form-control border-dark text-primary" id="email" required >
+                                <input  id="correo" name="correo" type="email" class="form-control border-dark text-primary" required >
                             </div>
                                     <div class="col-lg-6 mb-3">
                                         <label class="col-form-label text-secondary"><b>¿Qué seguro te gustaría cotizar?</b></label>
                                         <span class="text-danger">*</span>
-                                        <select id="selectSeguro" class="form-control border-dark text-primary" required>
+                                        <select id="selectSeguro" name="selectSeguro" class="form-control border-dark text-primary" required>
                                             <option class="text-danger"></option>
                                         </select>
                                         <br>
                                     </div>
                                     <div class="col-12 form-floating">
-                                        <label class="col-form-label  text-secondary"  for="floatingTextarea"> <b>Comentarios</b> </label>
-                                        <textarea class="form-control  border-dark text-primary" placeholder="" id="floatingTextarea"></textarea>
+                                        <label class="col-form-label  text-secondary"  for="mensaje"> <b>Comentarios</b> </label>
+                                        <textarea id="mensaje"name="mensaje" class="form-control  border-dark text-primary" placeholder="" ></textarea>
                                     </div>
                                 </div>
                             </div>
