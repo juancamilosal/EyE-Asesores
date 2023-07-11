@@ -136,4 +136,37 @@ function scrollToSection() {
     seccion.scrollIntoView({ behavior: 'smooth' });
 }
 
+const name = document.getElementById('nombre');
+const celular= document.getElementById('celular');
+const correo= document.getElementById('correo');
+const seleccionSeguro= document.getElementById('selectSeguro');
+const form= document.getElementById('contact-form');
+const parrafo= document.getElementById('warnings');
 
+form.addEventListener('submit', e =>{
+    e.preventDefault()
+    let warnings= '';
+    let regexEmail= '/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/'
+    let entrar = false;
+parrafo.innerText=""
+
+    if(name.value.length < 3){
+    warnings += 'El nombre no es válido <br>'
+        entrar=true
+    }
+
+    if(celular.value.length < 10 ||celular.value.length > 10 ){
+        warnings += 'El numero de celular no es válido <br>';
+        entrar=true;
+    }
+
+    if (entrar){
+        parrafo.innerHTML = warnings;
+    }else {
+        parrafo.innerHTML = 'Información enviada';
+        document.getElementById('contact-form').reset();
+        setTimeout(function() {
+            parrafo.innerHTML = '';
+        }, 5000);
+    }
+})

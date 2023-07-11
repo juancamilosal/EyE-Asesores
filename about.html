@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>E & E Asesores de Seguros</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Seguros, Pólizas de seguros, Protección financiera, Cobertura de seguros, Seguro de vida, Seguro de salud, Seguro de automóviles, Seguro de hogar, Seguro de viaje, Seguro de negocios, Responsabilidad civil, Protección de activos, Indemnización, Riesgo, Prima de seguro, Agente de seguros, Comparación de seguros, Reclamaciones de seguros, Renovación de pólizas, Seguridad financiera" name="keywords">
+    <meta content="Encuentra las mejores opciones de seguros para proteger tu vida, salud, automóvil, hogar y más. Ofrecemos pólizas de seguros con amplia cobertura y precios competitivos. Nuestros agentes de seguros expertos están listos para ayudarte a encontrar la mejor protección para tus necesidades. Solicita cotizaciones gratuitas y obtén la seguridad financiera que mereces." name="description">
 
     <!-- Favicon -->
     <link href="img/NUEUVO%20LOGO_SIN%20BORDES.png" rel="icon">
@@ -253,35 +253,46 @@
                     <h1 class="modal-title fs-5 " id="modal"><b>Envíanos tu datos</b></h1>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label class="col-form-label text-secondary"><b>¿Qué seguro te gustaría cotizar?</b></label>
-                            <span class="text-danger">*</span>
-                            <select  id="selectSeguro" name="selectSeguro" type="text" class="form-control border-dark text-primary" required >
-                                <option class="text-danger" ></option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="name" class="col-form-label  text-secondary"><b>Nombre y Apellido</b></label>
-                            <span class="text-danger">*</span>
-                            <input class="form-control border-dark text-primary" id="name" required >
-                        </div>
-                        <div class="mb-3">
-                            <label for="celular" class="col-form-label  text-secondary"><b>Número de Celular</b></label>
-                            <span class="text-danger">*</span>
-                            <input type="number" name="celular"class="form-control border-dark text-primary" id="celular" required >
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="col-form-label  text-secondary"> <b>Correo Electrónico</b></label>
-                            <span class="text-danger">*</span>
-                            <input type="email" name="email" class="form-control border-dark text-primary" id="email" required >
+                    <form  id="contact-form" action="/" method="post">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12 mb-3">
+                                    <label for="nombre" class="col-form-label  text-secondary"><b>Nombre y Apellido</b></label>
+                                    <span class="text-danger">*</span>
+                                    <input id="nombre"  name="nombre"  class="form-control border-dark text-primary" required >
+                                </div>
+                                <div class="col-lg-12 mb-3">
+                                    <label for="celular" class="col-form-label  text-secondary"><b>Número de Celular</b></label>
+                                    <span class="text-danger">*</span>
+                                    <input id="celular" name="celular" type="number" class="form-control border-dark text-primary"  required >
+                                </div>
+                                <div class="col-lg-12 mb-3">
+                                    <label for="correo" class="col-form-label  text-secondary"> <b>Correo Electrónico</b></label>
+                                    <span class="text-danger">*</span>
+                                    <input  id="correo" name="correo" type="email" class="form-control border-dark text-primary" required >
+                                </div>
+                                <div class="col-lg-12 mb-3">
+                                    <label class="col-form-label text-secondary"><b>¿Qué seguro te gustaría cotizar?</b></label>
+                                    <span class="text-danger">*</span>
+                                    <select id="selectSeguro" name="selectSeguro" class="form-control border-dark text-primary" required>
+                                        <option class="text-danger"></option>
+                                    </select>
+                                    <br>
+                                </div>
+                                <div class="col-12 form-floating">
+                                    <label class="col-form-label  text-secondary"  for="mensaje"> <b>Comentarios</b> </label>
+                                    <textarea id="mensaje"name="mensaje" class="form-control  border-dark text-primary" placeholder="" ></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-5">
+                                    <button type="button" class="btn btn-secondary p-2 mx-2" data-bs-dismiss="modal"><b>Cerrar</b></button>
+                                    <button type="submit" class="btn btn-primary text-center p-2"><b>Envíar</b></button>
+                                </div>
+                                <div class="col-12 text-center mt-5">
+                                    <p id="warnings" type="text" class="text-primary text-center"></p>
+                                </div>
+                            </div>
                         </div>
                     </form>
-                </div>
-                <div class="modal-body text-center pt-3">
-                    <button type="button" class="btn btn-secondary p-2 mx-2" data-bs-dismiss="modal"><b>Cerrar</b></button>
-                    <button type="button" class="btn btn-primary p-2"><b>Envíar</b></button>
                 </div>
             </div>
         </div>
