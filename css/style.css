@@ -9617,17 +9617,7 @@ a:hover{
   z-index: 9999;
 }
 
-@media (max-width: 992px) {
-  #sobreNosotros {
-    content: url(https://img.freepik.com/foto-gratis/chica-morena-sonriente-satisfecha-apuntando-dedo-abajo-recomendar-producto_1258-19017.jpg?w=1060&t=st=1687834228~exp=1687834828~hmac=fc018ce731df22d50b42f6953ef0db3335d19fb59d28572e8789a567b58d0827);
-  }
-}
 
-@media (min-width: 992px) {
-  #sobreNosotros {
-    content: url(https://img.freepik.com/foto-gratis/gente-negocios-trabajando-equipo-oficina_1303-22863.jpg?w=996&t=st=1689606740~exp=1689607340~hmac=b61adbe0085574eedaa051f50c9737746f54e25d9246942b40e1dd27a24d8525);
-  }
-}
 
 @media (max-width: 500px) {
   .img_service {
